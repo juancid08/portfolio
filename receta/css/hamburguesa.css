@@ -1,0 +1,85 @@
+@font-face {
+    src: (url(../font/FontsFree-Net-Proxima-Nova-Bold.otf));
+    font-family: texto normal ;
+    src:url(../font/baby-azalea.regular.ttf) ;
+    font-family: regular;
+    src: url(../font/Baby\ Azalea.ttf);
+    font-family: fantasy;
+   
+}
+/* las medidas de ancho y alto se deben calcular el borde hacia adentro*/
+* {box-sizing:border-box;}
+body{background-color: #f7f298;
+margin:0;padding: 0;
+background-image: url(../img/fondo.jpg);
+background-size: 50% auto;
+font-size: 1.2em; /*Medida normal de la letra, em y rem son exclusivas para los textos*/
+}
+
+#wrapper{width: 80%; /* para width, la medida suele ser en porcentaje*/
+background-color: #ffff ;
+margin: auto;
+padding:2%;
+
+
+
+
+}
+h1 {text-align: center;
+    font-family: regular;
+    font-size: 3em;
+    
+    margin:4%;
+    
+    }
+h2 {text-align: center;
+    font-family: fantasy;
+
+    
+
+    }
+
+img{
+    width: 500px;
+    height: 350px;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul {list-style-image: url(../img/bullet_ball_yellow.png);}
+dt{font-weight: bold;
+font-variant: small-caps;
+text-decoration: overline underline;
+color: red;}
+@media screen and (width<655px){
+        #wrapper { width: 70%;}
+
+        img{ width: 60%;
+            height: 70%;
+            }
+        h1 { width: auto;
+            font-size: 2em;}
+
+        body{ width: 100%;
+            height: 100%;
+            }   
+
+
+
+
+}
+@media screen and (width<281px){
+            h1{
+                font-size: 1.7em;
+            }
+            h2{
+                font-size: 1.4em;
+            }
+            body{
+                font-size: 0.9em;
+            }
+}
+
+
