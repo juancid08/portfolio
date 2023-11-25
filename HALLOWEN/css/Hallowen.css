@@ -1,0 +1,114 @@
+
+@font-face {
+       font-family: terror2;
+       src: url(../font/DOKTOR\ terror.ttf);
+       font-family: terror;
+       src: url(../font/terror_pro.ttf);
+}
+body { background-color: black;}
+#scenario {width: 1000px;
+            height: 559px;
+            background-image: url(../img/fondo.jpg);
+            margin: auto;
+            position: relative;
+
+}
+
+#moon {width:115px ;
+       height: 105px;
+       /*border: 2px solid purple;*/
+       position: absolute;
+       top: 10px;
+       left: 553px;
+
+}
+#calabaza {
+       width:175px ;
+       height: 168px;
+       /*border: 2px solid purple;*/
+       position: absolute;
+       top: 300px;
+       left: 150px;
+}
+#arbol {
+       width:175px ;
+       height: 350px;
+       /*border: 2px solid purple; */
+       position: absolute;
+       top: 50px;
+       left: 830px;
+}
+#zombie { position: absolute;
+       top: 300px;
+       left:300px ;
+       width: 175px;
+       height: 168px;
+       visibility: hidden;}
+#bat { position: absolute;
+       top: 10px;
+       left:553px ;
+       width: 175px;
+       height: 168px;
+       visibility: hidden;}
+#fantasma { position: absolute;
+       top: 50px;
+       left:830px ;
+       width: 175px;
+       height: 350px;
+       visibility: hidden;}
+
+#battexto{    color: white;
+              font-size: 1.5em;
+              font-family: terror2;
+              position: absolute;
+              top: 20px;
+              left: 300px;
+              opacity: 0;
+              animation-name:showbattexto ;
+              animation-duration: 6s;
+              animation-iteration-count: infinite;}
+#arboltexto{
+       opacity: 0;
+       animation-name:showarboltexto;
+       animation-duration: 4s;
+       position: absolute;
+       animation-iteration-count: infinite;
+       writing-mode: vertical-rl;
+       left: 600px;
+       font-size: 1.5em;
+       font-family: terror;
+}
+@keyframes showbattexto {
+       /*0%{color: aquamarine;}
+       25%{}
+       50%{}
+       100%{}*/
+       from {opacity: 0;
+       color: white;
+       left: 0px;}
+       to {opacity: 1;
+              color: red ;
+              left: 300px;}
+       
+}
+@keyframes showarboltexto {
+       0%{color: aquamarine;}
+       25%{color: red;}
+       50%{color: green;}
+       100%{color: yellow;}
+       from {opacity: 0;
+              top: 100px;}
+              to {opacity: 1;
+                     color: red ;
+                     top: 150px;}
+       }
+#arboltexto:hover{
+       font-size: 2.2em;
+
+       
+}
+#battexto:hover{
+       font-size: 2.2em;
+
+       
+}

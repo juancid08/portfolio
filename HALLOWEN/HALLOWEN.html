@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallowen</title>
+    <link rel="stylesheet" href="./css/Hallowen.css">
+    <link rel="shortcut icon" href="./img/bat.png" type="image/x-icon">
+    <script src="./js/halloween.js"></script>
+    <!-- aqui enlazamos el archivo externo con las funciones de js-->
+</head>
+<body>
+    <!--No es responsive cuidao-->
+    <!-- I have to search for an image, wallpaper image -->
+    <div id="scenario">
+    <!--we`re going to fix an specific area for an event for example the moon-->
+    <img id="bat" src="./img/batgit.gif" alt="" >
+    <div id="moon" onmouseover="show('bat');sound('batsound')" onmouseout="hide('bat'); silence('batsound')">
+        <audio id="batsound" >
+            <source src="./sonido/chillido.mp3" type="audio/mp3" >
+            </audio>
+
+    </div>
+    <img id="zombie" src="./img/zombie.gif" alt="" >
+    <div id="calabaza" onmouseover="show('zombie');sound('zombiesound')" onmouseout="hide('zombie');silence('zombiesound')">
+    <audio id="zombiesound" >
+    <source src="./sonido/jump-scare_1-66858.mp3" type="audio/mp3" >
+    </audio>
+
+    
+    </div>
+    <img id="fantasma" src="./img/fantasmagit.gif" alt="" >
+    <div id="arbol" onmouseover="show('fantasma');sound('fantasmasound')" onmouseout="hide('fantasma');silence('fantasmasound')">
+        <audio id="fantasmasound" >
+    <source src="./sonido/bububu.mp3" type="audio/mp3" >
+    </audio>
+
+    
+    </div>
+    <p id = battexto>
+        Don't touch the moon...
+    </p>
+    <p id = arboltexto>
+        don't look behind the tree
+    </p>
+
+</div>
+    
+
+</body>
+</html>
