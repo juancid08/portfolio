@@ -1,0 +1,239 @@
+@font-face {
+    font-family: titulo;
+    src: url(../font/PaintersDisplay-DEMOONLY.otf);
+}
+@font-face {
+    font-family: texto;
+    src: url(../font/FriendlyStranger.otf);
+}
+@font-face {
+    font-family: titulo2;
+    src: url(../font/Gord\ Playful.otf);
+}
+@font-face {
+    font-family: textonormal;
+    src: url(../font/epilog.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
+
+body {
+      margin-left:11%;padding:0;margin-right: 11%;   
+      background-color: black;
+      background-repeat: no-repeat;
+      }
+
+#wrapper {/*background-color:rgb(204, 204, 27);*/
+          background-color: black;
+          width:100%;        /*heho para movile first*/
+          margin:auto;}
+
+/*************** titulo************************/
+.title{
+    color: white;
+    text-align: center;
+    font-family: titulo;
+    font-size: 2.2em;
+}
+/*******************tabla**************************/
+
+
+
+table {
+    width: 13%;
+    border-collapse: collapse ;
+    margin-top: 20px ;
+    margin: 20px auto; 
+    color: white;
+    text-align: center;
+}
+
+th, td {
+    border-left: 2px solid #3a3a3a; /* Línea izquierda en todas las celdas */
+    border-right: 2px solid #3a3a3a; /* Línea derecha en todas las celdas */
+    padding: 6%;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    font-size: 1.4em;
+}
+table a {
+    color: white; /* Cambia el color a tu preferencia, en este caso, azul oscuro */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 1.4em;
+}
+tr:first-child th {
+    border-top: 2px solid #3a3a3a; /* Borde superior en la primera fila */
+}
+
+tr:last-child td {
+    border-bottom: 2px solid #3a3a3a; /* Borde inferior en la última fila */
+}
+tr:first-child td,
+tr:nth-child(2) td {
+    border-top: 2px solid #3a3a3a; /* Borde superior en la primera y segunda fila */
+}
+
+
+/* Cambia el color cuando el enlace es 'hovered' (pasas el ratón sobre él) */
+a:hover {
+    color: red; /* Cambia el color a tu preferencia cuando pasas el ratón sobre el enlace */
+}
+
+/************************texto**********************************/
+.texto{
+    font-family: texto;
+    color:red;
+    font-size: 1.5em;
+}
+/*******************Sinopsis***********************/
+.texto2{
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+    font-family: titulo2;
+}
+/***********************video*************************/
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;  100% de la altura de la ventana */
+}
+
+/* Estilo para el iframe dentro del contenedor */
+.video iframe {
+    width: 560px; /* Puedes ajustar el ancho según tus necesidades */
+    height: 315px; /* Puedes ajustar la altura según tus necesidades */
+}
+
+/*******************Repartos*********************************/
+.texto3{
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+    font-family: titulo2;
+        
+}
+#principale{
+    color: yellow;
+    font-size: 1.6em;
+    font-family: textonormal;
+    
+}
+ul {
+    list-style-type: none; /* Elimina los puntos predeterminados */
+    padding-left: 0; /* Elimina el espacio izquierdo predeterminado */
+    color: red;
+    font-size: 1.5em;
+    font-family: textonormal;
+    
+}
+
+li::before {
+    content: "\2022"; /* Código del carácter de punto */
+    color: white; /* Color opcional */
+    display: inline-block;
+    width: 1em; /* Ajusta el espacio entre el punto y el texto */
+    margin-left: -1em; /* Ajusta el espacio izquierdo del punto */
+}
+/*******************************Galería ******************************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido en el contenedor */
+    padding: 16px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+
+
+
+@media only screen and (width<=1050px) {
+      
+    
+    table{
+        width: 35%;
+    }
+    
+}
+@media only screen and (width<=650px){
+    body{
+        margin: 2.5%;
+        padding: 2.5%;
+    }
+    table{
+        width: 50%;
+    }
+    table a{
+        font-size: 1.2em;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+    .texto{
+        font-size:1.3em ;
+    }
+    .texto2{
+        font-size: 2em;
+    }
+    .texto3{
+        font-size: 2em;
+    }
+    #principale{
+        font-size: 1.4em;
+    }
+    ul{
+        font-size: 1.3em;
+    }
+}
+@media only screen and (width<=490px){
+    body{
+        margin: 2.5%;
+        padding: 2.5%;
+    }
+    table{
+        width: 50%;
+    }
+    table a{
+        font-size: 1.1em;
+    }
+    .title{
+        font-size: 1.3em;
+    }
+    .texto{
+        font-size:1.1em ;
+    }
+    .texto2{
+        font-size: 1.8em;
+    }
+    .texto3{
+        font-size: 1.8em;
+    }
+    ul{
+        font-size: 1.1em;
+    }
+    
+}
