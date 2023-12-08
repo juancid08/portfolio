@@ -18,7 +18,7 @@ html {
     scroll-behavior: smooth;
 }
 
-* {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
+* {box-sizing:border-box;}  
 
 body {
       margin-left:11%;padding:0;margin-right: 11%;   
@@ -26,9 +26,9 @@ body {
       background-repeat: no-repeat;
       }
 
-#wrapper {/*background-color:rgb(204, 204, 27);*/
+#wrapper {
           background-color: black;
-          width:100%;        /*heho para movile first*/
+          width:100%;        
           margin:auto;}
 
 /*************** titulo************************/
@@ -52,8 +52,8 @@ table {
 }
 
 th, td {
-    border-left: 2px solid #3a3a3a; /* Línea izquierda en todas las celdas */
-    border-right: 2px solid #3a3a3a; /* Línea derecha en todas las celdas */
+    border-left: 2px solid #3a3a3a; 
+    border-right: 2px solid #3a3a3a; 
     padding: 6%;
     text-align: left;
 }
@@ -63,26 +63,26 @@ th {
     font-size: 1.4em;
 }
 table a {
-    color: white; /* Cambia el color a tu preferencia, en este caso, azul oscuro */
-    text-decoration: none; /* Quita el subrayado */
+    color: white; 
+    text-decoration: none; 
     font-size: 1.4em;
 }
 tr:first-child th {
-    border-top: 2px solid #3a3a3a; /* Borde superior en la primera fila */
+    border-top: 2px solid #3a3a3a; 
 }
 
 tr:last-child td {
-    border-bottom: 2px solid #3a3a3a; /* Borde inferior en la última fila */
+    border-bottom: 2px solid #3a3a3a; 
 }
 tr:first-child td,
 tr:nth-child(2) td {
-    border-top: 2px solid #3a3a3a; /* Borde superior en la primera y segunda fila */
+    border-top: 2px solid #3a3a3a; 
 }
 
 
-/* Cambia el color cuando el enlace es 'hovered' (pasas el ratón sobre él) */
+
 a:hover {
-    color: red; /* Cambia el color a tu preferencia cuando pasas el ratón sobre el enlace */
+    color: red; 
 }
 
 /************************texto**********************************/
@@ -103,13 +103,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;  100% de la altura de la ventana */
 }
 
-/* Estilo para el iframe dentro del contenedor */
 .video iframe {
-    width: 560px; /* Puedes ajustar el ancho según tus necesidades */
-    height: 315px; /* Puedes ajustar la altura según tus necesidades */
+    width: 560px; 
+    height: 315px; 
 }
 
 /*******************Repartos*********************************/
@@ -127,8 +125,8 @@ a:hover {
     
 }
 ul {
-    list-style-type: none; /* Elimina los puntos predeterminados */
-    padding-left: 0; /* Elimina el espacio izquierdo predeterminado */
+    list-style-type: none; 
+    padding-left: 0; 
     color: red;
     font-size: 1.5em;
     font-family: textonormal;
@@ -136,11 +134,11 @@ ul {
 }
 
 li::before {
-    content: "\2022"; /* Código del carácter de punto */
-    color: white; /* Color opcional */
+    content: "\2022";
+    color: white; 
     display: inline-block;
-    width: 1em; /* Ajusta el espacio entre el punto y el texto */
-    margin-left: -1em; /* Ajusta el espacio izquierdo del punto */
+    width: 1em; 
+    margin-left: -1em; 
 }
 /*******************************Galería ******************************/
 .container {

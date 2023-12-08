@@ -1,18 +1,6 @@
-/*********************************************************/
-/*        Style sheet for Black Mirror web site          */
-/*        author: Pilar González                         */
-/*        version: 1.0                                   */
-/*        comments: class project 2023-24                */
-/*********************************************************/
 
-/* cuando quiero usar una tipografía y asegurarme de que se verá
-   correctamente, suministro también con la página el archivo
-   de la fuente que será .ttf ó .otf                      */
 
-/* 1- ahora, enlazo el archivo descargado                    */
-/* 2- utilizar el nombre de la font-family donde quiera usarlo */
-
-@font-face {   /* esto no es un selector, es un enlace */
+@font-face {   
       font-family: personajes;
       src: url(../font/FriendlyStranger.otf);
 }
@@ -28,7 +16,7 @@ html {
 
 /********** Estilo general ****************/
 
-* {box-sizing:border-box;}   /* con maquetación compleja SIEMPRE */
+* {box-sizing:border-box;}   
 
 body {margin:0;padding:0;   
       font-family: textonormal;
@@ -52,33 +40,33 @@ nav {
   }
   
   .topnav {
-      background-color: #1a1a1a; /* Fondo oscuro */
+      background-color: #1a1a1a; 
       overflow: hidden;
-      border-bottom: 4px solid #edd600; /* Amarillo mostaza */
-      border-radius: 15px; /* Bordes redondeados */
+      border-bottom: 4px solid #edd600; 
+      border-radius: 15px; 
   }
   
   .topnav a {
       float: left;
       display: block;
-      color: #edd600; /* Amarillo mostaza */
+      color: #edd600; 
       text-align: center;
-      padding: 14px 24px; /* Ajuste de espaciado */
+      padding: 14px 24px; 
       text-decoration: none;
       font-size: 1.2em;
       transition: background-color 0.3s, color 0.3s;
-      border-radius: 15px; /* Bordes redondeados */
+      border-radius: 15px; 
       margin: 0 8px;
   }
   
   .topnav a:hover {
-      background-color: #363636; /* Gris oscuro al pasar el ratón */
-      color: #fff; /* Blanco */
+      background-color: #363636; 
+      color: #fff; 
   }
   
   .topnav a.active {
-      background-color: #b71c1c; /* Rojo oscuro - color activo */
-      color: #fff; /* Blanco */
+      background-color: #b71c1c; 
+      color: #fff; 
       
   }
   
@@ -91,14 +79,14 @@ nav {
       bottom: 25px;
       left: 1790px;
       font-size: 2rem !important;
-      color: #1a1a1a; /* Fondo oscuro */
+      color: #1a1a1a;
       z-index: 2;
       transition: color 0.3s;
       padding: 10px;
   }
   
   .fa-arrow-circle-up:hover {
-      color: #757575; /* Gris al pasar el ratón */
+      color: #757575; 
   }
 
 /***************************   HERO SECTION *********************************/
@@ -170,20 +158,6 @@ nav {
       color: white;
 }
 
-.grid-2{
-      display: grid;
-      grid-template-columns: 100% ;
-}
-
-.col-2{
-      padding: 4%;
-}
-
-#introimg{
-      width: 100%; 
-      display: block;
-      margin: auto;
-}
 
 #intro .texto {
       color: red;
@@ -278,15 +252,14 @@ nav {
 #informacion8{
       display: none;
 }
-/*estilo del video dentro de la card*/
+
 #season .container {
       position: relative;
       overflow: hidden;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      padding-top: 56.25%; 
     }
     
-    /* Then style the iframe to fit in the container div with full height and width */
 #season .responsive-iframe {
       position: absolute;
       top: 0;
@@ -421,16 +394,6 @@ footer .container {
       padding-top: 75%; /* 4:3 Aspect Ratio  */
       }
     
-    /* Then style the iframe to fit in the container div with full height and width */
-/*footer .responsive-iframe {
-      position: absolute;
-      top: 10%; 
-      left: 10%;
-      bottom: 0;
-      right: 0;
-      width: 80%; 
-      height: 80%;
-    }*/
 /************** responsividad ****************************************/
 
 
