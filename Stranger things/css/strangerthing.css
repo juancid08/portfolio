@@ -122,7 +122,31 @@ nav {
 
 
 /******************galeria***************************/
-.container {
+/*.container {
+      max-width: 1200px;
+      margin: 0 auto; 
+      padding: 16px;
+  }
+  
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+  }
+  
+  .gallery-item {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+  }*/
+  .container {
       max-width: 1200px;
       margin: 0 auto; 
       padding: 16px;
@@ -146,6 +170,58 @@ nav {
       display: block;
       border-radius: 8px;
   }
+  .container figure{
+      position:relative;
+       /*height: 250px;*/
+       cursor: pointer;
+       /*width: 350px;*/
+       overflow: hidden;
+       border-radius: 8px;
+       box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+   }
+   .container figure img{
+       width: 100%;
+       height: 100%;
+       transition: all 400ms ease-out;
+       will-change: transform;
+   }
+   .container figure .capa{
+       position: absolute;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0,103,123,0.7);
+       transition: all 400ms ease-out;
+       opacity: 0;
+       visibility: hidden;
+      text-align: center;
+   }
+   .container figure:hover > .capa {
+       opacity: 1;
+       visibility: visible;
+   }
+   .container figure:hover > .capa h3{
+       margin-top: 70px;
+       margin-bottom: 15px;
+   }
+   .container figure:hover > img{
+       transform: scale(1.3);
+   }
+   .container figure .capa h3{
+       color: #fff;
+       font-weight: 400;
+       margin-bottom: 120px;
+       transition: all 400ms ease-out;
+        margin-top: 30px;
+   }
+   .container figure .capa p{
+       color: #fff;
+       font-size: 15px;
+       line-height: 1.5;
+       width: 100%;
+       max-width: 220px;
+       margin: auto;
+   }
 
 
 /***************INTRO SECTION GRID-2**************/
@@ -358,7 +434,7 @@ ul {
 
 
 /*************FOOTER********************************/
-footer{
+/*footer{
       background-color:rgb(252, 2, 2);
       color: white;
       text-align: center;
@@ -373,14 +449,14 @@ footer{
 footer .fa{
       font-size: 1.5em;
       margin-right:10px ;/*Para separarlo*/
-      padding: 16px 10px;
+     /* padding: 16px 10px;
       width: 50px;
       text-align: center;
       margin:  5px 10px;
-      border-radius: 50%;
+      border-radius: 50%;*/
 
 
-}
+/*}
 footer a {
       color: white;
 }
@@ -392,7 +468,98 @@ footer .container {
       overflow: hidden;
       width: 100%;
       padding-top: 75%; /* 4:3 Aspect Ratio  */
-      }
+      /*}*/
+      footer {
+            background-color: red;
+            color: white;
+            text-align: center; /* Añadido para centrar el contenido */
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        
+        /* Elimina las reglas de estilo de Google Maps */
+        .footer .container {
+            display: none;
+        }
+        
+        .footer .responsive-iframe {
+            display: none;
+        }
+        
+        .col-4 {
+            padding: 20px; /* Ajusta el espacio interno */
+        }
+        
+        .col-4 a p {
+            font-size: 1.5em; /* Ajusta el tamaño del texto en la columna derecha */
+            margin-top: 15px; /* Mueve el texto hacia abajo */}
+        
+        footer h3 {margin:20px 0;}
+        
+        footer .fa {
+          padding: 15px 10px;
+          font-size: 1.5em;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius:50%;
+        }
+                  
+        footer a {color:white;
+                  text-decoration: none;}
+        /****** redes sociales en footer *****/
+        footer .fa-facebook {background-color:#3B5998}
+        
+        footer .fa-twitter {background-color:#55ACEE ;}
+        
+        footer .fa-whatsapp {background-color: #25D366;}
+        
+        footer .fa-instagram {background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);}
+        
+        /******* créditos ******************/
+        
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 10%;
+          top: 0;
+          width: 80%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0,0.4);
+          color:black;
+        }
+        
+        
+        .modal-content {
+          background-color: #fefefe;
+          margin: 15% auto; 
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%; 
+        }
+        
+        .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        } 
+        
+        #myBtn {cursor:pointer;}
     
 /************** responsividad ****************************************/
 
@@ -436,7 +603,7 @@ footer .container {
 }
 
 /******** PC *****************/
-@media only screen and (width>=800px) {
+@media only screen and (width>=1300px) {
       
       .grid-2{
             grid-template-columns: 50% 50%;
@@ -471,10 +638,51 @@ footer .container {
       footer{
             text-align: center;
       }
+      .card button{ 
+            width: 15%;
+      }
     
 }
 
+@media only screen and (width>=985px) { 
+      .grid-2{
+            grid-template-columns: 50% 50%;
+      }
+      .grid-3d{
+            grid-template-columns: 25% 25% 50%;
+      }
+      .grid-4{
+            grid-template-columns: 25% 25% 25% 25%;
+      }
+      #hero{
+            height: 80vh;
+      }
+      .title{
+            font-size: 2.2em;
+      }
+      #temporadas .texto{
+            font-size: 1.5em;
+      }
+      a {
+            font-size: 1.1em;
+      }
+      ul{
+            font-size: 1.5em;
+      }
+      #intro .texto {
+            font-size: 1.5em;
+      }
+      #produccion .texto {
+            font-size: 1.5em;
+      }
+      footer{
+            text-align: center;
+      }
+      .card button{
+            width: 25%;
+       }
 
+}
       
 /*******+ mediaqueris de la barra de navegacion******/
 @media screen and (max-width: 850px) {
