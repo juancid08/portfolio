@@ -1,5 +1,5 @@
 
-
+/***************BARRA DE NAVEGACIÓN ***************************/ 
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -9,7 +9,7 @@ function myFunction() {
     }
   }
 
-
+/**********************************BUTTON CARDS*****************/ 
   document.addEventListener('DOMContentLoaded', function () {
     
     var button = document.getElementById('button');

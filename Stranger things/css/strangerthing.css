@@ -32,7 +32,7 @@ body {margin:0;padding:0;
 
 
 
-/************************** BARRA DE NAVEGACIÓN ( DE W3 SCHOOLS) ********/
+/************************** BARRA DE NAVEGACIÓN  ********/
 nav {
       position: sticky;
       top: 0;
@@ -100,7 +100,7 @@ nav {
 }
                        
 
-#hero button {background-color:#808080;
+#hero button {background-color:#0f0f0f;
               color:white;
               font-weight: bold;
               padding:10px;
@@ -111,14 +111,17 @@ nav {
               top:70%;
               left:50%;
               transform:translate(-50%,-50%); 
+              font-family: personajes;
              
 }
 
 #hero button:hover{
-      background-color: black;
-      color: grey ;
+      background-color: white;
+      color: rgb(253, 2, 2) ;
       border: 2px solid grey;
+      font-family: personajes;
 }
+
 
 
 /******************galeria***************************/
@@ -454,7 +457,7 @@ footer .fa {
 footer a {
       color:white;
       text-decoration: none;}
-        /****** redes sociales en footer *****/
+/****** redes sociales en footer *****/
 footer .fa-facebook {
       background-color:#3B5998
 }

@@ -20,7 +20,8 @@
 <h2 id="estructura">Estructura</h2>
 <p>La web está dividida en  6 secciones:</p>
 <ul>
-  <li>Hero Section</li>  
+  <li>Hero Section</li>
+  <li>Hero</li>  
   <li>Introducción</li>
   <li>Personajes</li>
   <li>Temporadas </li>
@@ -36,7 +37,7 @@
 <h3>Hero Section</h3>
 <img src="./img/strangerfondo.png" alt="imagen de hero section" style="width:50%">
 <p>He utilizado una imagen de fondo tomada de pinterest que se adapta fácilmente a diferentes dispositivos como PC, tablets , móviles...<br>
-Sobre ella no he colocado un Call to Action debido a que no lo encontraba portuno en mi página web y no me gustaba como quedaba<br>
+Sobre ella  he colocado un Call to Action en el cual pones 'Viaje a lo desconocido', porque pensaba que queda bien con mi página ya que es de Stranger Tnhings.<br>
 </p>
 
 <h3>Introducción</h3>
